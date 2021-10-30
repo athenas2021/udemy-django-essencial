@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Index</title>
+        <title>Produto</title>
     </head>
 
     <body>
@@ -15,15 +15,15 @@
                 <tr>
                     <th>Produto</th>
                     <th>Preço</th>
+                    <th>Estoque</th>
                 </tr>
             </thead>
             <tbody>
-                {% for produto in produtos %}
                 <tr>
-                    <td><a href="{% url 'produto' produto.id %}">{{ produto.nome }}</td>
+                    <td><a href="{% url 'index' %}">{{ produto.nome }}</td>
                     <td>{{ produto.preco }}</td>
+                    <td>{{ produto.estoque }}</td>
                 </tr>
-                {% endfor %}
                 </tr>
             </tbody>
         </table>

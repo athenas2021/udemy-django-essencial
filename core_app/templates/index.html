@@ -1,9 +1,12 @@
-<!DOCTYPEe html>
+{% load static   %}
+<!DOCTYPE html>
     <html lang='pt-br'>
 
     <head>
         <meta charset="UTF-8">
         <title>Index</title>
+        <img src="{% static 'images/heroku.png' %}" width=30%>
+        <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
     </head>
 
     <body>
@@ -27,6 +30,8 @@
                 </tr>
             </tbody>
         </table>
+        <button onclick="teste();">Clique teste</button>
+        <script type="text/javascript" src="{% static 'js/teste.js' %}"></script>
     </body>
 
     </html>

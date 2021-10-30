@@ -28,7 +28,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'Optional default value')
 DEBUG = False
 
 #ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['https://kn-django2021.herokuapp.com']
+ALLOWED_HOSTS = ['kn-django2021.herokuapp.com']
 
 # Application definition
 

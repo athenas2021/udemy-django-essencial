@@ -5,12 +5,13 @@
     <head>
         <meta charset="UTF-8">
         <title>Index</title>
-        <img src="{% static 'images/heroku.png' %}" width=30%>
+        
         <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
     </head>
-
     <body>
+        <center>
         <h1>Index</h1>
+        <img src="{% static 'images/heroku.png' %}" width=30%>
         <h2>{{ curso }}</h2>
         <span>{{ status_usuario }}</span>
         <table>
@@ -31,6 +32,7 @@
             </tbody>
         </table>
         <button onclick="teste();">Clique teste</button>
+    </center>
         <script type="text/javascript" src="{% static 'js/teste.js' %}"></script>
     </body>
 
